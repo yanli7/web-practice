@@ -1,0 +1,51 @@
+html {
+    text-align: center;
+    font-family: sans-serif;
+}
+#navbar {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+}
+ul {
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+}
+#navbar li {
+    display: inline;
+    margin: 50px;
+}
+div li {
+    display: inline;
+    margin: 60px;
+}
+#welcome-section {
+    background-color: yellow;
+    min-height: 55vh;
+    padding-top: 45vh;
+}
+#projects {
+    background-color: silver;
+    min-height: 60vh;
+    padding-top: 55vh;
+}
+#contacts {
+    background-color: #42ebf4;
+    min-height: 55vh;
+    padding-top: 45vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+@media and only screen(max-width: 600px) {
+    #navbar {
+        text-align: center;
+    }
+}
+iframe {
+    margin: 20px;
+}

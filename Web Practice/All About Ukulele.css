@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    position: relative;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+}
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-around;
+
+}
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    padding: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+#form {
+    text-align: center;
+    margin-top: 170px;
+}
+#submit {
+    margin: 15px;
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    background: gold;
+    color: black;
+}
+#information {
+    text-align: center;
+}
+#how-it-works {
+    text-align: center;
+    margin: 100px;
+}
+#pricing {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+#pocket, #concert, #tenor {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    width: calc(65% /3);
+}
+.level {
+    background-color: aqua;
+    width: 100%;
+    padding: 10px 10px;
+}
+button {
+    margin: 15px 10px;
+    background-color: gold;
+    color: black;
+    border: 0;
+    padding: 7px 7px;
+    width: 100px;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    margin: 50px;
+}
