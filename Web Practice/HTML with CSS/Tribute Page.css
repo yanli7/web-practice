@@ -1,0 +1,43 @@
+html {
+    background-color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center
+}
+#main {
+    margin: auto;
+    padding: 20px;
+}
+#img-div {
+    margin: 15px;
+    width: 100%;
+    border: 1px solid white;
+    background-color: silver;
+}
+#image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+#img-caption {
+    margin: 15px;
+}
+ul {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+li {
+    margin: 15px;
+}
+blockquote {
+    font-style: italic;
+}
+#font {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+h3 {
+    text-align: center;
+    margin: 20px;
+}

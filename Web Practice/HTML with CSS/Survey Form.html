@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Survey Form.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Seminar Feedback And Attendee Information</p>
+<form id="survey-form" action="" method="GET">
+    <div class="labels">
+        <label id="name-label">*Name:</label>
+        <input id="name" name="name" class="input-field" placeholder="Enter your name" required />
+    </div>
+    <div class="labels">
+        <label id="email-label">*Email:</label>
+        <input id="email" name="email" class="input-field" type="email" placeholder="Enter your email" required />
+    </div>
+    <div class="labels">
+        <label id="number-label">*Age:</label>
+        <input id="number" name="age" class="input-field" type="number" placeholder="Enter your age" min="1" max="120" required />
+    </div>
+    <div>Please identify the seminar you are attending today:</div>
+    <select id="dropdown">
+        <option>--Select--</option>
+        <option>Seminar 1</option>
+        <option>Seminar 2</option>
+        <option>Seminar 3</option>
+        <option>Seminar 4</option>
+        <option>Seminar 5</option>
+    </select>
+    <div>Gender:</div>
+    <input type="radio" name="gender" value="gender" />
+    <label>Male</label><br>
+    <input type="radio" name="gender" value="gender" />
+    <label>Female</label>
+    <div>Highest Level of Education Completed:</div>
+    <input type="radio" name="education" value="1" />
+    <label>High School or less</label><br>
+    <input type="radio" name="education" value="2" />
+    <label>Some Collage</label><br>
+    <input type="radio" name="education" value="3" />
+    <label>Collage Degree</label><br>
+    <input type="radio" name="education" value="4" />
+    <label>Graduate/Post Graduate</label>
+    <div>What other seminars have you attended? (Select all that apply):</div>
+    <input type="checkbox" value="seminar 1" />
+    <label>Seminar 1</label><br>
+    <input type="checkbox" value="seminar 2" />
+    <label>Seminar 2</label><br>
+    <input type="checkbox" value="seminar 3" />
+    <label>Seminar 3</label><br>
+    <input type="checkbox" value="seminar 4" />
+    <label>Seminar 4</label><br>
+    <input type="checkbox" value="seminar 5" />
+    <label>Seminar 5</label>
+    <div>Comments on the seminars which you have attended:</div>
+    <textarea placeholder="Leave comments here"></textarea>
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
