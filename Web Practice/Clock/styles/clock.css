@@ -1,0 +1,44 @@
+html {
+    background-color: darkcyan;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.date {
+    font-size: 50px;
+    padding: 50px;
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    border: 20px solid black;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+}
+
+.clock-face {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hand {
+    width: 50%;
+    height: 7px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: right;
+    transform: rotate(90deg);
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
