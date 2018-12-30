@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign-up Form</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: silver;
+            margin: 100px;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Sign-up Form</h2>
+    <form id="sign-up" action="" method="GET">
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" />
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" />
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function validation(e) {
+            
+            const userName = document.getElementById("username").value;
+            const userEmail = document.getElementById("email").value;
+            const userPassword = document.getElementById("password").value;
+
+            if (userName.length === 0) {
+                alert("You must enter a username.");
+                e.preventDefault();
+                return;
+            }
+
+            if (userEmail.length === 0) {
+                alert("You must enter an email.");
+                e.preventDefault();
+                return;
+            }
+
+            if (userPassword.length === 0) {
+                alert("You must enter a password.");
+                e.preventDefault();
+                return;
+            }
+        }
+
+        window.onload = function () {
+            document.getElementById("sign-up").addEventListener("submit", function (e) {
+                validation(e);
+            });
+        }
+    </script>
+</body>
+
+</html>
