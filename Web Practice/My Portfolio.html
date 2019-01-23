@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Portfolio</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-size: 3em;
+    }
+
+    #panels {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .panel {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      transition: font-size 0.5s cubic-bezier(0.5, -0.2, 0.7, -0.2),
+        flex 0.5s cubic-bezier(0.5, -0.2, 0.7, -0.2),
+        background 0.2s;
+    }
+
+    #panel1 {
+      background-color: #f4ee42;
+    }
+
+    #panel2 {
+      background-color: #4cdb62;
+    }
+
+    #panel3 {
+      background-color: #00f7f7;
+    }
+
+    .panel div {
+      visibility: hidden;
+    }
+
+    #panel2 h1 {
+      transform: translateY(150%);
+    }
+
+    #panel2.open-active h1 {
+      transform: translateY(-10%);
+    }
+
+    #panel1.open-active div {
+      margin: 20px;
+      padding: 20px
+    }
+
+    #panel3.open-active div {
+      margin-bottom: 12px;
+    }
+
+    .panel.open-active div {
+      visibility: visible;
+    }
+
+    .panel.open-active a {
+      text-decoration: none;
+    }
+
+    .panel.open {
+      flex: 3;
+      font-size: 30px;
+    }
+
+    .exercises {
+      display: flex;
+    }
+
+    .exercise {
+      margin: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="panels">
+    <div id="panel1" class="panel">
+      <h1>About Me</h1>
+      <div>Hi! I am Yan Li, I have been teaching myself HTML, CSS and JavaScript and I love it, even though it can be
+        quite complex sometimes, once the problems are solved I feel much better. I'm eager to learn and I want to
+        become a good Front-end Deveoper.</div>
+    </div>
+    <div id="panel2" class="panel">
+      <h1>My Exercises</h1>
+      <div class="exercises">Some of my learning exercises</div>
+      <div class="exercises">
+        <div class="exercise">
+          <a href="https://codepen.io/y-li/full/mamYzN"><iframe src="https://codepen.io/y-li/full/mamYzN" height="100px"
+              width="200px"></iframe>
+            <div>Clock</div>
+          </a>
+        </div>
+        <div class="exercise">
+          <a href="https://codepen.io/y-li/full/GzJKWW"><iframe src="https://codepen.io/y-li/full/GzJKWW" height="100px"
+              width="200px"></iframe>
+            <div>Deposit Calculator</div>
+          </a>
+        </div>
+        <div class="exercise">
+          <a href="https://codepen.io/y-li/full/WPbVEo"><iframe src="https://codepen.io/y-li/full/WPbVEo" height="100px"
+              width="200px"></iframe>
+            <div>Change me with JS</div>
+          </a>
+        </div>
+        <div class="exercise">
+          <a href="https://codepen.io/y-li/full/rPVBeP"><iframe src="https://codepen.io/y-li/full/rPVBeP" height="100px"
+              width="200px"></iframe>
+            <div>Product Landing Page</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="panel3" class="panel">
+      <h1>My Contacts</h1>
+      <div>Phone:+358 405289761</div>
+      <div>Email: yliy1874@gmail.com</div>
+      <div>Github: https://github.com/yanli7</div>
+    </div>
+  </div>
+  <script>
+    const panels = document.querySelectorAll('.panel');
+
+    for (const panel of panels) {
+      panel.addEventListener('click', toggleOpen);
+      panel.addEventListener('transitionend', toggleActive);
+    }
+
+    function toggleOpen(e) {
+      e.target.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      if (e.propertyName.includes('flex')) {
+        e.target.classList.toggle('open-active');
+      }
+    }
+  </script>
+</body>
+
+</html>
