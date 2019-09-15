@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    width: 500px;
+    margin: 10% auto;
+    font-family: ubuntu, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    background: grey;
+  }
+  .calculator {
+    border: 1px solid silver;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .input {
+    border: 1px solid silver;
+    border-radius: 10px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+  }
+  .input:hover {
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  .operators div {
+    display: inline-block;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+    width: 97px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: red;
+  }
+  .operators div:hover {
+    background-color: green;
+  }
+  .operators div:active {
+    font-weight: bold;
+  }
+  #numbers {
+    display: inline-block;
+  }
+  .numbers div {
+    display: inline-block;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+    width: 97px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: silver;
+  }
+  .numbers div:hover {
+    background-color: white;
+  }
+  .numbers div:active {
+    font-weight: bold;
+  }
+  div.equality {
+    display: inline-block;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+    width: 97px;
+    text-align: center;
+    padding: 116px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: red;
+  }
+  div.equality:hover {
+    background-color: green;
+  }
+  div.equality:active {
+    font-weight: bold;
+  }
+  #clear {
+    background-color: orange;
+  }
+  #clear:hover {
+    background-color: green;
+  }
+  #clear:active {
+    font-weight: bold;
+  }
